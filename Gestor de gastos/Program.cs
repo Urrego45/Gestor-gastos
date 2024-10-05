@@ -7,6 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL")));
 
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NDaF5cWWtCf1NpRGJGfV5ycEVAal5WTnJYUj0eQnxTdEFiWX9acXxXQWRbV0d2XA==");
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

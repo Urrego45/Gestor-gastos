@@ -18,5 +18,13 @@ namespace Gestor_de_gastos.Models
         [Column(TypeName = "nvarchar(10)")]
 
         public string Type { get; set; } = "Expese";
+
+        [NotMapped]
+        public string? TitleWithIcon {
+            get
+            {
+                return this.Icon + " " + this.Title;
+            }
+        }
     }
 }
